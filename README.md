@@ -7,7 +7,7 @@ Link to wargame: http://overthewire.org/wargames/bandit/
 <pre>
 ssh -p 2220 bandit0@bandit.labs.overthewire.org
 	bandit0
-cat readme #dispays the contents of the readme file in the home directory
+cat readme # ispays the contents of the readme file in the home directory
 </pre>
 ### Level 1
 <pre>
@@ -47,7 +47,7 @@ ssh -p 2220 bandit4@bandit.labs.overthewire.org
 
 cd inhere
 ls
-file ./*    #Observe here how ./ is appended to * to list all files as the file names begin with -
+file ./*    # bserve here how ./ is appended to * to list all files as the file names begin with -
 
 ''' #Output
 ./-file00: data
@@ -62,7 +62,7 @@ file ./*    #Observe here how ./ is appended to * to list all files as the file 
 ./-file09: data
 '''
 
-#Here we can see that only ./-file7 is human readable, thus we open that file
+# ere we can see that only ./-file7 is human readable, thus we open that file
 cat ./-file07
 </pre>
 ### Level 5
@@ -82,7 +82,7 @@ ssh -p 2220 bandit6@bandit.labs.overthewire.org
 
 find . -type f -size 33c -user bandit7 -group bandit6
 
-#Here we just append more conditions (group and user) to the find command.
+# ere we just append more conditions (group and user) to the find command.
 
 cat ./var/lib/dpkg/info/bandit7.password
 </pre>
@@ -102,7 +102,7 @@ sort data.txt | uniq -u
 
 #uniq -u compares each line to an adjacent lines and outputs the line if it is locally unique (compared to adjacent lines)
 
-#To ensure that the line is globally unique, we run the sort command and pipe the output into uniq
+# o ensure that the line is globally unique, we run the sort command and pipe the output into uniq
 </pre>
 ### Level 9
 <pre>
@@ -181,7 +181,7 @@ ssh -p 2220 bandit14@bandit.labs.overthewire.org
 
 telnet localhost 30000
 # use telnet to connect to the host <localhost> on port <30000>
-	4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e #enter password
+	4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e # nter password
 </pre>
 ### Level 15
 <pre>
