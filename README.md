@@ -15,7 +15,7 @@ ssh -p 2220 bandit0@bandit.labs.overthewire.org
 	boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 cat ./-
 
-Here the password is in the "-" file. However this is a special character in bash, thus "./" has to be appended to signal that a file path is being provided.
+# Here the password is in the "-" file. However this is a special character in bash, thus "./" has to be appended to signal that a file path is being provided.
 </pre>
 ### Level 2
 <pre>
@@ -24,7 +24,7 @@ ssh -p 2220 bandit2@bandit.labs.overthewire.org
 cat spaces\ in\ this\ filename
 
 
-The file containing the password has spaces, thus "\" is used to escape the special <space> characters. This is automatically done if one presses tab after typing in the first few characters of the file name.
+# The file containing the password has spaces, thus "\" is used to escape the special <space> characters. This is automatically done if one presses tab after typing in the first few characters of the file name.
 </pre>
 ### Level 3
 <pre>
@@ -34,7 +34,7 @@ ssh -p 2220 bandit3@bandit.labs.overthewire.org
 find -name "*" #find allows one to search for a file by name in the cwd and all subdirectories
 cat ./inhere/.hidden
 
-ALT
+# Alternative Procedure
 
 cd inhere
 ls -a # -a flag shows all files as well
@@ -49,7 +49,7 @@ cd inhere
 ls
 file ./*    # bserve here how ./ is appended to * to list all files as the file names begin with -
 
-''' #Output
+''' # Output
 ./-file00: data
 ./-file01: data
 ./-file02: data
@@ -62,7 +62,7 @@ file ./*    # bserve here how ./ is appended to * to list all files as the file 
 ./-file09: data
 '''
 
-# ere we can see that only ./-file7 is human readable, thus we open that file
+# Here we can see that only ./-file7 is human readable, thus we open that file
 cat ./-file07
 </pre>
 ### Level 5
@@ -82,7 +82,7 @@ ssh -p 2220 bandit6@bandit.labs.overthewire.org
 
 find . -type f -size 33c -user bandit7 -group bandit6
 
-# ere we just append more conditions (group and user) to the find command.
+# Here we just append more conditions (group and user) to the find command.
 
 cat ./var/lib/dpkg/info/bandit7.password
 </pre>
@@ -100,9 +100,9 @@ ssh -p 2220 bandit8@bandit.labs.overthewire.org
 	cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 sort data.txt | uniq -u
 
-#uniq -u compares each line to an adjacent lines and outputs the line if it is locally unique (compared to adjacent lines)
+# uniq -u compares each line to an adjacent lines and outputs the line if it is locally unique (compared to adjacent lines)
 
-# o ensure that the line is globally unique, we run the sort command and pipe the output into uniq
+# To ensure that the line is globally unique, we run the sort command and pipe the output into uniq
 </pre>
 ### Level 9
 <pre>
@@ -124,7 +124,7 @@ ssh -p 2220 bandit10@bandit.labs.overthewire.org
 base64 -d data.txt 
 # Decodes the base64 file and prints the output
 
-#Some notes on base64: it is an encoding scheme that encodes binary to ACSII wehre each each base 64 digit represents 6 bits of data (since 2^6 == 64). When used on text, the chars are first converted into octets and bits before being base64 encoded {https://en.wikipedia.org/wiki/Base64#Examples}
+# Some notes on base64: it is an encoding scheme that encodes binary to ACSII wehre each each base 64 digit represents 6 bits of data (since 2^6 == 64). When used on text, the chars are first converted into octets and bits before being base64 encoded {https://en.wikipedia.org/wiki/Base64#Examples}
 </pre>
 ### Level 11
 <pre>
