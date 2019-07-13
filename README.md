@@ -609,10 +609,8 @@ git push origin master
 '''
 remote: ### Attempting to validate files... ####
 remote
-<pre>
 remote: .oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.
 remote
-<pre>
 remote: Well done! Here is the password for the next level
 remote: 56a9bf19c63d650ce78e6ec0354ee45e
 remote
