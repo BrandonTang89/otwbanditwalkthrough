@@ -614,13 +614,10 @@ remote: .oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.
 remote
 <pre>
 remote: Well done! Here is the password for the next level
-<pre>
 remote: 56a9bf19c63d650ce78e6ec0354ee45e
 remote
-<pre>
 remote: .oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.
-remote
-<pre>
+remote:
 '''
 </pre>
 ### Level 32
