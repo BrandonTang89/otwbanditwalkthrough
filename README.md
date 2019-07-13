@@ -178,6 +178,7 @@ cat data8
 
 </pre>
 ### Level 13
+<pre>
 ssh -p 2220 bandit13@bandit.labs.overthewire.org
 	8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 
@@ -188,6 +189,7 @@ cat /etc/bandit_pass/bandit14
 
 </pre>
 ### Level 14
+<pre>
 ssh -p 2220 bandit14@bandit.labs.overthewire.org
 	4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
 
@@ -197,6 +199,7 @@ telnet localhost 30000
 
 </pre>
 ### Level 15
+<pre>
 ssh -p 2220 bandit15@bandit.labs.overthewire.org
 	BfMYroe26WYalil77FoDi9qh59eK5xNr
 
@@ -207,6 +210,7 @@ openssl s_client -connect localhost:30001
 
 </pre>
 ### Level 16
+<pre>
 ssh -p 2220 bandit16@bandit.labs.overthewire.org
 	cluFn7wTiGryunymYOu4RcffSxQluehd
 
@@ -285,6 +289,7 @@ cat /etc/bandit_pass/bandit17 # Find out the actual password for bandit17
 
 </pre>
 ### Level 17
+<pre>
 ssh -p 2220 bandit17@bandit.labs.overthewire.org
 	xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn
 diff passwords.new passwords.old
@@ -292,14 +297,15 @@ diff passwords.new passwords.old
 
 </pre>
 ### Level 18
-# In this </pre>
-### Level, the .bashrc logs one out immediately once an interactive session is started.
+<pre>
+# In this level, the .bashrc logs one out immediately once an interactive session is started.
 # Thus we read the password without opening an interactive bash shell
 ssh -p 2220 bandit18@bandit.labs.overthewire.org "cat readme"
 	kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
 
 </pre>
 ### Level 19
+<pre>
 ssh -p 2220 bandit19@bandit.labs.overthewire.org
 	IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
 
@@ -308,6 +314,7 @@ ssh -p 2220 bandit19@bandit.labs.overthewire.org
 
 </pre>
 ### Level 20
+<pre>
 ssh -p 2220 bandit20@bandit.labs.overthewire.org
 	GbKksEFF4yrVs6il55v6gwY5aVje5f0j
 
@@ -322,6 +329,7 @@ tmux attach # Attach back to the tmux session
 
 </pre>
 ### Level 21
+<pre>
 ssh -p 2220 bandit21@bandit.labs.overthewire.org
 	gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
 
@@ -349,6 +357,7 @@ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 
 </pre>
 ### Level 22
+<pre>
 ssh -p 2220 bandit22@bandit.labs.overthewire.org
 	Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
 
@@ -381,6 +390,7 @@ cat /tmp/8ca319486bfbbc3663ea0fbe81326349
 
 </pre>
 ### Level 23
+<pre>
 ssh -p 2220 bandit23@bandit.labs.overthewire.org
 	jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
 
@@ -407,6 +417,7 @@ cat bandit24pass
 
 </pre>
 ### Level 24
+<pre>
 ssh -p 2220 bandit24@bandit.labs.overthewire.org
 	UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
 
@@ -434,6 +445,7 @@ cat output
 
 </pre>
 ### Level 25 --> 27 
+<pre>
 ssh -p 2220 bandit25@bandit.labs.overthewire.org
 	uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
 
@@ -467,6 +479,7 @@ ssh -i bandit26.sshkey bandit26@localhost
 
 </pre>
 ### Level 27
+<pre>
 ssh -p 2220 bandit27@bandit.labs.overthewire.org
 	3ba3118a22e93127a4ed485be72ef5ea
 
@@ -483,6 +496,7 @@ cat /repo/README
 
 </pre>
 ### Level 28
+<pre>
 ssh -p 2220 bandit28@bandit.labs.overthewire.org
 	0ef186ac70e04ea33b4c1853d2526fa2
 
@@ -532,10 +546,6 @@ Date:   Tue Oct 16 14:00:39 2018 +0200
 # We see that there are several different versions of the file, trying the second commit yields the flag
 git show 186a1038cc54d1358d42d468cdc8e3cc28a93fcb:README.md 
 '''
-# Bandit Notes
-Some notes for </pre>
-### Level29 of bandit.
-
 ## credentials
 
 - username: bandit29
@@ -543,8 +553,10 @@ Some notes for </pre>
 '''
 
 </pre>
-### Level 29: # Basically a repeat of the previous </pre>
-### Level
+
+### Level 29: 
+<pre>
+# Basically a repeat of the previous level
 ssh -p 2220 bandit29@bandit.labs.overthewire.org
 	bbc96594b4e001778eee9975372716b2
 
@@ -570,6 +582,7 @@ Some notes for bandit30 of bandit.
 
 </pre>
 ### Level 30
+<pre>
 ssh -p 2220 bandit30@bandit.labs.overthewire.org
 	5b90576bedb2cc04c86a9e924ce42faf
 
@@ -598,6 +611,7 @@ cat secret.txt
 
 </pre>
 ### Level 31
+<pre>
 ssh -p 2220 bandit31@bandit.labs.overthewire.org
 	47e603bb428404d265f59c42920d81e5
 
@@ -645,6 +659,7 @@ remote
 
 </pre>
 ### Level 32
+<pre>
 ssh -p 2220 bandit32@bandit.labs.overthewire.org
 	56a9bf19c63d650ce78e6ec0354ee45e
 
@@ -659,8 +674,8 @@ cat /etc/bandit_pass/bandit33
 '''c9c3199ddf4121b10cf581a98d51caee'''
 
 </pre>
-### Level 33 [Victory </pre>
-### Level]
+### Level 33 [Victory Level]
+<pre>
 ssh -p 2220 bandit33@bandit.labs.overthewire.org
 	c9c3199ddf4121b10cf581a98d51caee
 
