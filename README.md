@@ -7,7 +7,7 @@ Link to wargame: http://overthewire.org/wargames/bandit/
 <pre>
 ssh -p 2220 bandit0@bandit.labs.overthewire.org
 	bandit0
-cat readme # ispays the contents of the readme file in the home directory
+cat readme # dispays the contents of the readme file in the home directory
 </pre>
 ### Level 1
 <pre>
@@ -73,7 +73,6 @@ ssh -p 2220 bandit5@bandit.labs.overthewire.org
 cd inhere
 find . -type f -size 1033c #Here we use find to search for a file of size 1033 bytes (https://www.ostechnix.com/find-files-bigger-smaller-x-size-linux/)
 cat ./maybehere07/.file2
-
 </pre>
 ### Level 6
 <pre>
@@ -114,7 +113,6 @@ strings data.txt | grep '^=\+'
 # Finding all ASCII strings in data.txt, we pipe that into a grep search utilising regular expression.
 # '^=\+' indicatest that the line should start wtih one or more "=" characters 
 # {https://www.gnu.org/software/findutils/manual/html_node/find_html/grep-regular-expression-syntax.html}
-
 </pre>
 ### Level 10
 <pre>
@@ -275,7 +273,6 @@ cat /etc/bandit_pass/bandit17 # Find out the actual password for bandit17
 ssh -p 2220 bandit17@bandit.labs.overthewire.org
 	xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn
 diff passwords.new passwords.old
-
 </pre>
 ### Level 18
 <pre>
@@ -290,7 +287,6 @@ ssh -p 2220 bandit19@bandit.labs.overthewire.org
 	IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
 
 ./bandit20-do cat /etc/bandit_pass/bandit20 # ./bandit20-do runs a command as bandit20; from there we just use it to access the bandit20 password
-
 </pre>
 ### Level 20
 <pre>
@@ -363,7 +359,6 @@ echo $mytarget
 
 # Read off the file
 cat /tmp/8ca319486bfbbc3663ea0fbe81326349
-
 </pre>
 ### Level 23
 <pre>
@@ -389,7 +384,6 @@ cat /etc/bandit_pass/bandit24 > bandit24pass
 chmod +x script.sh
 # Wait a while for the cronjob to run (~ 1 min or so), keep checking if bandit24pass is generated yet
 cat bandit24pass
-
 </pre>
 ### Level 24
 <pre>
@@ -416,7 +410,6 @@ chmod +x bandit.sh # Make bandit.sh executable
 
 cat output
 # the password is on the last line
-
 </pre>
 ### Level 25 --> 27 
 <pre>
@@ -448,7 +441,6 @@ ssh -i bandit26.sshkey bandit26@localhost
 
 # Get level 27 password
 ./bandit27-do cat /etc/bandit_pass/bandit27
-
 </pre>
 ### Level 27
 <pre>
@@ -464,7 +456,6 @@ git clone ssh://bandit27-git@localhost/home/bandit27-git/repo
 
 # Read the password
 cat /repo/README
-
 </pre>
 ### Level 28
 <pre>
