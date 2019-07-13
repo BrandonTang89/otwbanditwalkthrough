@@ -8,7 +8,6 @@ Link to wargame: http://overthewire.org/wargames/bandit/
 ssh -p 2220 bandit0@bandit.labs.overthewire.org
 	bandit0
 cat readme #dispays the contents of the readme file in the home directory
-
 </pre>
 ### Level 1
 <pre>
@@ -17,7 +16,6 @@ ssh -p 2220 bandit0@bandit.labs.overthewire.org
 cat ./-
 
 Here the password is in the "-" file. However this is a special character in bash, thus "./" has to be appended to signal that a file path is being provided.
-
 </pre>
 ### Level 2
 <pre>
@@ -27,7 +25,6 @@ cat spaces\ in\ this\ filename
 
 
 The file containing the password has spaces, thus "\" is used to escape the special <space> characters. This is automatically done if one presses tab after typing in the first few characters of the file name.
-
 </pre>
 ### Level 3
 <pre>
@@ -42,7 +39,6 @@ ALT
 cd inhere
 ls -a # -a flag shows all files as well
 cat .hidden
-
 </pre>
 ### Level 4
 <pre>
@@ -68,7 +64,6 @@ file ./*    #Observe here how ./ is appended to * to list all files as the file 
 
 #Here we can see that only ./-file7 is human readable, thus we open that file
 cat ./-file07
-
 </pre>
 ### Level 5
 <pre>
@@ -78,7 +73,6 @@ ssh -p 2220 bandit5@bandit.labs.overthewire.org
 cd inhere
 find . -type f -size 1033c #Here we use find to search for a file of size 1033 bytes (https://www.ostechnix.com/find-files-bigger-smaller-x-size-linux/)
 cat ./maybehere07/.file2
-
 
 </pre>
 ### Level 6
@@ -91,7 +85,6 @@ find . -type f -size 33c -user bandit7 -group bandit6
 #Here we just append more conditions (group and user) to the find command.
 
 cat ./var/lib/dpkg/info/bandit7.password
-
 </pre>
 ### Level 7
 <pre>
@@ -100,7 +93,6 @@ ssh -p 2220 bandit7@bandit.labs.overthewire.org
 
 grep "millionth" data.txt
 # grep is used to search for strings within text files and display the line containing the matched string {https://www.linode.com/docs/tools-reference/tools/how-to-grep-for-text-in-files/}
-
 </pre>
 ### Level 8
 <pre>
@@ -111,7 +103,6 @@ sort data.txt | uniq -u
 #uniq -u compares each line to an adjacent lines and outputs the line if it is locally unique (compared to adjacent lines)
 
 #To ensure that the line is globally unique, we run the sort command and pipe the output into uniq
-
 </pre>
 ### Level 9
 <pre>
@@ -124,7 +115,6 @@ strings data.txt | grep '^=\+'
 # '^=\+' indicatest that the line should start wtih one or more "=" characters 
 # {https://www.gnu.org/software/findutils/manual/html_node/find_html/grep-regular-expression-syntax.html}
 
-
 </pre>
 ### Level 10
 <pre>
@@ -135,7 +125,6 @@ base64 -d data.txt
 # Decodes the base64 file and prints the output
 
 #Some notes on base64: it is an encoding scheme that encodes binary to ACSII wehre each each base 64 digit represents 6 bits of data (since 2^6 == 64). When used on text, the chars are first converted into octets and bits before being base64 encoded {https://en.wikipedia.org/wiki/Base64#Examples}
-
 </pre>
 ### Level 11
 <pre>
@@ -148,7 +137,6 @@ alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
 
 cat data.txt  | rot13
 # Pipe the input into the function and read the decrypted message
-
 </pre>
 ### Level 12
 <pre>
@@ -175,7 +163,6 @@ tar -xvf filename.bin
 # Repeat above until ASCII file is obtained
 # Read off password
 cat data8
-
 </pre>
 ### Level 13
 <pre>
@@ -186,7 +173,6 @@ ssh -i sshkey.private bandit14@localhost
 # Simply use the private key to login to the bandit 14 account
 
 cat /etc/bandit_pass/bandit14
-
 </pre>
 ### Level 14
 <pre>
@@ -196,7 +182,6 @@ ssh -p 2220 bandit14@bandit.labs.overthewire.org
 telnet localhost 30000
 # use telnet to connect to the host <localhost> on port <30000>
 	4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e #enter password
-
 </pre>
 ### Level 15
 <pre>
@@ -207,7 +192,6 @@ ssh -p 2220 bandit15@bandit.labs.overthewire.org
 # open an SSL connection to localhost port 30001 and print the ssl certificate used by the service
 openssl s_client -connect localhost:30001
 	BfMYroe26WYalil77FoDi9qh59eK5xNr #enter password
-
 </pre>
 ### Level 16
 <pre>
@@ -285,14 +269,12 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 
 ssh -i bandit17key.private bandit17@localhost
 cat /etc/bandit_pass/bandit17 # Find out the actual password for bandit17
-
 </pre>
 ### Level 17
 <pre>
 ssh -p 2220 bandit17@bandit.labs.overthewire.org
 	xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn
 diff passwords.new passwords.old
-
 
 </pre>
 ### Level 18
@@ -301,7 +283,6 @@ diff passwords.new passwords.old
 # Thus we read the password without opening an interactive bash shell
 ssh -p 2220 bandit18@bandit.labs.overthewire.org "cat readme"
 	kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
-
 </pre>
 ### Level 19
 <pre>
@@ -309,7 +290,6 @@ ssh -p 2220 bandit19@bandit.labs.overthewire.org
 	IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
 
 ./bandit20-do cat /etc/bandit_pass/bandit20 # ./bandit20-do runs a command as bandit20; from there we just use it to access the bandit20 password
-
 
 </pre>
 ### Level 20
@@ -325,7 +305,6 @@ printf "GbKksEFF4yrVs6il55v6gwY5aVje5f0j" | netcat -l -p 3001 # Start a port lis
 
 tmux attach # Attach back to the tmux session
 # The new password should be printed
-
 </pre>
 ### Level 21
 <pre>
@@ -353,7 +332,6 @@ cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 
 # The password is being written to /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv, thus we read the password from there
 cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
-
 </pre>
 ### Level 22
 <pre>
@@ -386,7 +364,6 @@ echo $mytarget
 # Read off the file
 cat /tmp/8ca319486bfbbc3663ea0fbe81326349
 
-
 </pre>
 ### Level 23
 <pre>
@@ -412,7 +389,6 @@ cat /etc/bandit_pass/bandit24 > bandit24pass
 chmod +x script.sh
 # Wait a while for the cronjob to run (~ 1 min or so), keep checking if bandit24pass is generated yet
 cat bandit24pass
-
 
 </pre>
 ### Level 24
@@ -440,7 +416,6 @@ chmod +x bandit.sh # Make bandit.sh executable
 
 cat output
 # the password is on the last line
-
 
 </pre>
 ### Level 25 --> 27 
@@ -474,7 +449,6 @@ ssh -i bandit26.sshkey bandit26@localhost
 # Get level 27 password
 ./bandit27-do cat /etc/bandit_pass/bandit27
 
-
 </pre>
 ### Level 27
 <pre>
@@ -490,7 +464,6 @@ git clone ssh://bandit27-git@localhost/home/bandit27-git/repo
 
 # Read the password
 cat /repo/README
-
 
 </pre>
 ### Level 28
@@ -548,7 +521,6 @@ git show 186a1038cc54d1358d42d468cdc8e3cc28a93fcb:README.md
 - username: bandit29
 - password: bbc96594b4e001778eee9975372716b2
 '''
-
 </pre>
 
 ### Level 29: 
@@ -576,7 +548,6 @@ Some notes for bandit30 of bandit.
 - username: bandit30
 - password: 5b90576bedb2cc04c86a9e924ce42faf
 '''
-
 </pre>
 ### Level 30
 <pre>
@@ -605,7 +576,6 @@ git cat-file -t f17132340e8ee6c159e0a4a6bc6f80e1da3b1aea
 # We then print the blob contents and read the password
 git cat-file -p f17132340e8ee6c159e0a4a6bc6f80e1da3b1aea > secret.txt
 cat secret.txt
-
 </pre>
 ### Level 31
 <pre>
@@ -652,7 +622,6 @@ remote: .oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.
 remote
 <pre>
 '''
-
 </pre>
 ### Level 32
 <pre>
@@ -668,7 +637,6 @@ $0
 
 cat /etc/bandit_pass/bandit33
 '''c9c3199ddf4121b10cf581a98d51caee'''
-
 </pre>
 ### Level 33 [Victory Level]
 <pre>
@@ -687,5 +655,4 @@ Keep an eye out for an announcement on our usual communication channels!
 In the meantime, you could play some of our other wargames.
 
 If you have an idea for an awesome new levels, please let us know!
-'''
-</pre>
+'''</pre>
