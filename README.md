@@ -251,8 +251,7 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 
 
 
-# Create a new temp directory and create a credentials file. Use it to ssh into the next </pre>
-### Level
+# Create a new temp directory and create a credentials file. Use it to ssh into the next level
 mkdir /tmp/somename
 cd /tmp/somename
 
