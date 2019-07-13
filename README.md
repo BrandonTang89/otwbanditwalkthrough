@@ -471,8 +471,7 @@ ssh -i bandit26.sshkey bandit26@localhost
 # ":! /bin/bash"
 
 
-# Get </pre>
-### Level 27 password
+# Get level 27 password
 ./bandit27-do cat /etc/bandit_pass/bandit27
 
 
@@ -511,8 +510,7 @@ cd repo
 cat README.md
 '''
 # Bandit Notes
-Some notes for </pre>
-### Level29 of bandit.
+Some notes for Level 29 of bandit.
 
 ## credentials
 
@@ -645,8 +643,7 @@ remote
 remote: .oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.
 remote
 <pre>
-remote: Well done! Here is the password for the next </pre>
-### Level
+remote: Well done! Here is the password for the next level
 <pre>
 remote: 56a9bf19c63d650ce78e6ec0354ee45e
 remote
@@ -681,17 +678,14 @@ ssh -p 2220 bandit33@bandit.labs.overthewire.org
 ls
 cat README.txt
 '''
-Congratulations on solving the last </pre>
+Congratulations on solving the last level
 ### Level of this game!
 
-At this moment, there are no more </pre>
-### Levels to play in this game. However, we are constantly working
-on new </pre>
-### Levels and will most likely expand this game with more </pre>
-### Levels soon.
+At this moment, there are no more levels to play in this game. However, we are constantly working
+on new levels and will most likely expand this game with more levels soon.
 Keep an eye out for an announcement on our usual communication channels!
 In the meantime, you could play some of our other wargames.
 
-If you have an idea for an awesome new </pre>
-### Level, please let us know!
+If you have an idea for an awesome new levels, please let us know!
 '''
+</pre>
