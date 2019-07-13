@@ -70,7 +70,6 @@ file ./*    #Observe here how ./ is appended to * to list all files as the file 
 cat ./-file07
 
 </pre>
- </pre>
 ### Level 5
 <pre>
 ssh -p 2220 bandit5@bandit.labs.overthewire.org
